@@ -2,7 +2,7 @@ import React from "react";
 import {useDispatch} from "react-redux";
 import {loginMan} from "../actions.js";
 
-import userIcon from "../img/user_icon.png";
+import userIcon from "../img/user_icon.jpg";
 
 function IsLoggedBar() {
     const dispatch = useDispatch();
@@ -14,9 +14,14 @@ function IsLoggedBar() {
 
     return(
         <div className="loginStateBar">
-            <img src={userIcon} alt="user icon" />
-            <h1>Logged</h1>
-            <button onClick={login}>Logout</button>
+            <button onClick={login}>
+                <div className="loginImage">
+                    <img src={userIcon} alt="user icon" />
+                </div>
+                <div className="loginUsername">
+                    <h1>Logged</h1>
+                </div>
+            </button>
         </div>
     );
 };

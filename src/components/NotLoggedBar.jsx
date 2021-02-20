@@ -14,9 +14,14 @@ function NotLoggedBar() {
 
     return(
         <div className="loginStateBar">
-            <img src={iconBlocked} alt="user icon" />
-            <h1>Not Logged</h1>
-            <button onClick={login}>Login</button>
+            <button onClick={login}>
+                <div className="loginImage">
+                    <img src={iconBlocked} alt="user icon" />
+                </div>
+                <div className="loginUsername">
+                    <h1>Login</h1>
+                </div>
+            </button>
         </div>
     );
 };

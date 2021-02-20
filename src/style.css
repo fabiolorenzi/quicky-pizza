@@ -45,5 +45,43 @@ body {
 .loginBar {
     display: inline-block;
     width: 30%;
-    background-color: green;
+}
+
+.loginStateBar {
+    display: block;
+    margin: auto;
+}
+
+.loginStateBar button {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    justify-content: space-around;
+}
+
+.loginImage {
+    display: inline-block;
+    width: 60px;
+}
+
+.loginImage img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.loginUsername {
+    display: inline-block;
+    width: 150px;
+}
+
+.loginUsername h1 {
+    display: inline-block;
+    font-size: 20px;
 }
