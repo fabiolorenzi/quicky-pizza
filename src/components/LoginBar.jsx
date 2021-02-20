@@ -9,7 +9,7 @@ function LoginBar() {
 
     return(
         <div className="loginBar">
-            {status.value ? <IsLoggedBar /> : <NotLoggedBar />}
+            {status ? <IsLoggedBar /> : <NotLoggedBar />}
         </div>
     );
 };
