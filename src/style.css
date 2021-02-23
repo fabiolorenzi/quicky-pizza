@@ -21,10 +21,14 @@ body {
 .menu {
     display: inline-block;
     width: 70%;
-    text-align: center;
 }
 
-.menu a {
+.big_menu {
+    width: 100%;
+    text-align: right;
+}
+
+.big_menu a {
     display: inline-block;
     color: #ffffff;
     text-decoration: none;
@@ -32,14 +36,18 @@ body {
     transition-duration: 0.3s;
 }
 
-.menu a:hover {
+.big_menu a:hover {
     color: #b4b4b4;
     transition-duration: 0.3s;
 }
 
-.menu a p {
+.big_menu a p {
     font-size: 20px;
     margin-right: 20px;
+}
+
+.burger_menu {
+    display: none;
 }
 
 .loginBar {
@@ -50,17 +58,15 @@ body {
 .loginStateBar {
     display: block;
     margin: auto;
+    padding-top: 5px;
 }
 
 .loginStateBar button {
-    background-color: #ffffff;
     display: flex;
-    align-items: center;
     margin: auto;
-    padding: 5px 20px;
+    background-color: #ffffff;
     border-radius: 5px;
     border: 1px solid #000000;
-    justify-content: space-around;
 }
 
 .loginImage {
@@ -78,10 +84,119 @@ body {
 
 .loginUsername {
     display: inline-block;
-    width: 150px;
+    width: 120px;
 }
 
 .loginUsername h1 {
     display: inline-block;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 760px) {
+
+    /*--------------------HEADER--------------------*/
+
+    .menu {
+        width: 55%;
+    }
+
+    .big_menu {
+        display: none;
+    }
+
+    .burger_menu {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .burger_menu button {
+        display: block;
+        margin-top: 12px;
+        margin-left: 9px;
+        background-color: #000000;
+        border: none;
+        transition-duration: 0.5s;
+    }
+
+    .burger_menu button div {
+        display: block;
+        background-color: #ffffff;
+        padding: 2px 15px;
+        margin-bottom: 5px;
+        transition-duration: 0.5s;
+    }
+
+    .burgerOpen {
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
+    }
+
+    .burgerOpen div:first-child {
+        position: absolute;
+        transform: rotate(-60deg);
+        margin-top: 6px;
+        margin-left: -5px;
+        padding: 2px 13px;
+        transition-duration: 0.5s;
+    }
+
+    .burgerOpen div:nth-child(2) {
+        position: absolute;
+        transform: rotate(58deg);
+        margin-top: 6px;
+        margin-left: 8px;
+        padding: 2px 13px;
+        transition-duration: 0.5s
+    }
+
+    .burgerOpen div:last-child {
+        margin-top: 18px;
+        transition-duration: 0.5s;
+    }
+
+    .loginBar {
+        width: 45%;
+    }
+
+    .loginStateBar {
+        padding-bottom: 5px;
+    }
+    
+    .loginStateBar button {
+        padding: 0;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
+    .loginImage {
+        width: 60px;
+    }
+    
+    .loginImage img {
+        width: 15px;
+        height: 15px;
+        padding: 10px;
+    }
+    
+    .loginUsername {
+        width: 80px;
+    }
+    
+    .loginUsername h1 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    /*--------------------HEADER--------------------*/
+
+    .menu {
+        width: 40%;
+    }
+
+    .loginBar {
+        width: 60%;
+    }
 }
