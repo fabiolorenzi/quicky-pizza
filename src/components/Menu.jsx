@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {AiFillCaretLeft} from "react-icons/ai";
 
 function Menu() {
     const [open, setOpen] = useState(false);
@@ -9,6 +10,8 @@ function Menu() {
     };
 
     let openCloseRes = open ? "burgerOpen" : "";
+
+    let hiddenMenuOpener = open ? "hidden_menu_open" : "hidden_menu_closed";
 
     return(
         <div className="menu">
@@ -24,6 +27,19 @@ function Menu() {
                     <div></div>
                     <div></div>
                 </button>
+            </div>
+            <div className="hidden_menu_bar" id={hiddenMenuOpener}>
+                <div className="hidden_menu">
+                    <a href="#aboutus"><p>About us</p></a>
+                    <a href="#shop"><p>Shop</p></a>
+                    <a href="#checkout"><p>Checkout</p></a>
+                    <a href="#contacts"><p>Contacts</p></a>
+                </div>
+                <div className="hidden_button">
+                    <button onClick={openClose}>
+                        <AiFillCaretLeft id="arrow_icon" />
+                    </button>
+                </div>
             </div>
         </div>
     );
