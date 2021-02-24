@@ -14,6 +14,7 @@ body {
 .header {
     display: flex;
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: #000000;
 }
@@ -94,6 +95,78 @@ body {
 
 .hidden_menu_bar {
     display: none;
+}
+
+/*---------------------ABOUT_US--------------------*/
+
+.aboutus {
+    display: block;
+    background-image: url("./img/pizza_background_1.png");
+    margin-top: 50px;
+    padding-top: 50px;
+    width: 100%;
+}
+
+#title_aboutus,
+#slogan_aboutus {
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    color: #ff0000;
+    margin-bottom: 80px;
+}
+
+.main_aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.image_aboutus {
+    width: 300px;
+    margin: auto;
+}
+
+.image_aboutus img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+.text_aboutus {
+    display: block;
+    width: 500px;
+    text-align: left;
+    margin: auto;
+}
+
+.text_aboutus p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3em;
+    margin-bottom: 40px;
+}
+
+#slogan_aboutus {
+    display: block;
+    width: 70%;
+    margin: 40px auto 0;
+    padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    /*---------------------ABOUT_US--------------------*/
+
+    .text_aboutus {
+        width: 90%;
+    }
+
+    .text_aboutus p {
+        font-size: 25px;
+    }
 }
 
 @media only screen and (max-width: 760px) {
@@ -249,6 +322,13 @@ body {
         margin-top: 2px;
         color: #ffffff;
     }
+
+    /*---------------------ABOUT_US--------------------*/
+
+    #slogan_aboutus {
+        font-size: 35px;
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -261,6 +341,26 @@ body {
 
     .hidden_button {
         width: 15%;
+    }
+
+    /*---------------------ABOUT_US--------------------*/
+
+    .image_aboutus {
+        width: 200px;
+    }
+
+    .image_aboutus img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 40px;
+    }
+
+    .text_aboutus {
+        width: 95%;
+    }
+
+    .text_aboutus p {
+        font-size: 20px;
     }
 }
 
@@ -282,5 +382,16 @@ body {
 
     .hidden_button {
         width: 20%;
+    }
+
+    /*---------------------ABOUT_US--------------------*/
+
+    .text_aboutus p {
+        margin-bottom: 0px;
+    }
+
+    #slogan_aboutus {
+        font-size: 30px;
+        width: 80%;
     }
 }
