@@ -9,6 +9,8 @@ function NewProductForm() {
         image: []
     });
 
+    const [ingredient, setIngredient] = useState("");
+
     const [imageProd, setImageProd] = useState([]);
 
     const {getRootProps, getInputProps} = useDropzone({
@@ -25,12 +27,15 @@ function NewProductForm() {
     const image = imageProd.map((file) => (
         <div key={file.name}>
             <div>
-                <img src={file.preview} style={{width: "200px"}}alt="img preview" />
+                <img src={file.preview} style={{width: "200px"}} alt="img preview" />
             </div>
         </div>
-    ))
+    ));
 
-    const [ingredient, setIngredient] = useState("");
+    const addImage = e => {
+        e.preventDefault();
+        setProd({...prod, [prod.image]: imageProd.map((file) => prod.image.push(file))});
+    };
 
     const handleChange = e => {
         e.preventDefault();
@@ -52,12 +57,14 @@ function NewProductForm() {
 
     const newProduct = e => {
         e.preventDefault();
+        console.log(prod);
         setProd({
             name: "",
             price: "",
             ingredients: [],
             image: []
         });
+        setImageProd([]);
     };
 
     return(
@@ -83,6 +90,7 @@ function NewProductForm() {
                 </div>
                 <button type="submit">Add Product</button>
                 <div>{image}</div>
+                <button onClick={addImage}>Add Image</button>
             </form>
         </div>
     );
