@@ -24,10 +24,10 @@ function NewProductForm() {
         }
     });
 
-    const image = imageProd.map((file) => (
+    let image = imageProd.map((file) => (
         <div key={file.name}>
             <div>
-                <img src={file.preview} style={{width: "200px"}} alt="img preview" />
+                <img src={file.preview} alt="img preview" />
             </div>
         </div>
     ));
@@ -35,6 +35,16 @@ function NewProductForm() {
     const addImage = e => {
         e.preventDefault();
         setProd({...prod, [prod.image]: imageProd.map((file) => prod.image.push(file))});
+        console.log(prod);
+        console.log(imageProd);
+    };
+
+    const removeImage = e => {
+        e.preventDefault();
+        setProd({...prod, [prod.image]: prod.image.map(() => prod.image.pop())});
+        setImageProd(imageProd.map(() => imageProd.pop()));
+        console.log(prod);
+        console.log(imageProd);
     };
 
     const handleChange = e => {
@@ -57,7 +67,6 @@ function NewProductForm() {
 
     const newProduct = e => {
         e.preventDefault();
-        console.log(prod);
         setProd({
             name: "",
             price: "",
@@ -69,28 +78,53 @@ function NewProductForm() {
 
     return(
         <div className="products_form">
-            <h1>Insert a new product</h1>
+            <h1>INSERT A NEW PRODUCT</h1>
             <form onSubmit={newProduct}>
-                <div className="products_form_iamge">
-                    <div {...getRootProps()}>
-                        <input {...getInputProps()} />
-                        <p>Drop the image of the product here</p>
-                    </div>
+                <div className="product_form_image">
+                    {imageProd.length === 0
+                        ? <div {...getRootProps()} className="imageInput">
+                            <input {...getInputProps()} />
+                            <p>Drop or click here to insert the image of the product</p>
+                        </div>
+                        : <div>
+                            <div id="input_image">{image}</div>
+                            {prod.image.length === 0
+                                ? <div className="button_insertImage">
+                                    <button id="addButton" onClick={addImage}>Add Image</button>
+                                </div>
+                                : <div className="button_removeImage">
+                                    <p>Image inserted correctly</p>
+                                    <button id="removeButton" onClick={removeImage}>Remove Image</button>
+                                </div>
+                            }
+                        </div>
+                    }
                 </div>
                 <div className="product_form">
-                    <label htmlFor="name">Name Product</label>
-                    <input type="text" name="name" value={prod.name} onChange={handleChange} />
-                    <label htmlFor="price">Price</label>
-                    <input type="number" step="0.01" name="price" value={prod.price} onChange={handleChange} />
-                    <label htmlFor="ingredients">Add Ingredients</label>
-                    <input type="text" name="ingredient" value={ingredient} onChange={handleChangeSin} />
-                    <button onClick={addIngredient}>Add Ingredient</button>
-                    <p id="listIngredients">List of the Ingredients</p>
-                    {prod.ingredients.map((ing) => <p>{ing}</p>)}
+                    <div>
+                        <label htmlFor="name">Name Product</label>
+                        <input type="text" name="name" value={prod.name} onChange={handleChange} />
+                    </div>
+                    <div>
+                        <label htmlFor="price">Price</label>
+                        <input type="number" step="0.01" name="price" value={prod.price} onChange={handleChange} />
+                    </div>
+                    <div>
+                        <div>
+                            <label htmlFor="ingredients">Add Ingredients</label>
+                            <input type="text" name="ingredient" value={ingredient} onChange={handleChangeSin} />
+                            <button onClick={addIngredient}>Add</button>
+                        </div>
+                        <div>
+                            <p id="listIngredients">List of the Ingredients</p>
+                            {prod.ingredients.map((ing) =>
+                                <div className="ingredient">
+                                    <p classList="ingredient">{ing}</p>
+                                </div>)}
+                        </div>
+                    </div>
+                    <button id="submitButton" type="submit">Add Product</button>
                 </div>
-                <button type="submit">Add Product</button>
-                <div>{image}</div>
-                <button onClick={addImage}>Add Image</button>
             </form>
         </div>
     );

@@ -156,6 +156,163 @@ body {
     padding-bottom: 80px;
 }
 
+/*--------------------NEW_PRODUCT_FORM---------------------*/
+
+.products_form {
+    display: block;
+    width: 100%;
+    background-image: url("./img/form_wallpaper.jpg");
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.products_form h1 {
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    color: #ff0000;
+    margin-bottom: 80px;
+}
+
+.product_form_image {
+    display: inline-block;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.imageInput,
+#input_image div {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: #5c5c5c;
+    text-align: center;
+    cursor: pointer;
+}
+
+.imageInput p {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding-top: 50%;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#input_image div div img {
+    width: 500px;
+    height: 500px;
+}
+
+.button_insertImage,
+.button_removeImage {
+    width: 100%;
+    text-align: center;
+}
+
+.button_removeImage p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+#addButton,
+#removeButton {
+    display: block;
+    margin: auto;;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#addButton {
+    background-color: #00d300;
+    color: #000000;
+    margin-top: 30px;
+}
+
+#removeButton {
+    background-color: #ff0000;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.product_form {
+    display: inline-block;
+    width: 420px;
+    position: absolute;
+    margin-top: 25px;
+    background-color: #5c5c5c;
+    padding: 10px;
+}
+
+.product_form div {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product_form div label {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.product_form div input {
+    float: right;
+    clear: both;
+}
+
+.product_form div button {
+    display: block;
+    float: right;
+}
+
+#listIngredients {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.ingredient p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#submitButton {
+    display: block;
+    margin: auto;
+    color: #000000;
+    font-weight: 500;
+    background-color: #00d300;
+    padding: 10px 50px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1050px) {
+
+    /*--------------------NEW_PRODUCT_FORM---------------------*/
+
+    .product_form_image {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .product_form {
+        width: 400px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
 
     /*---------------------ABOUT_US--------------------*/
@@ -166,6 +323,26 @@ body {
 
     .text_aboutus p {
         font-size: 25px;
+    }
+
+    /*--------------------NEW_PRODUCT_FORM---------------------*/
+
+    .products_form {
+        padding-bottom: 100px;
+    }
+
+    .product_form_image {
+        display: block;
+        margin: auto;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+
+    .product_form {
+        display: block;
+        width: 420px;
+        margin: auto;
+        position: relative;
     }
 }
 
@@ -329,6 +506,13 @@ body {
         font-size: 35px;
         width: 90%;
     }
+
+    /*--------------------NEW_PRODUCT_FORM---------------------*/
+
+    .imageInput {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -361,6 +545,37 @@ body {
 
     .text_aboutus p {
         font-size: 20px;
+    }
+
+    /*--------------------NEW_PRODUCT_FORM---------------------*/
+
+    .imageInput {
+        width: 250px;
+        height: 250px;
+    }
+
+    .imageInput p {
+        font-size: 15px;
+    }
+
+    .product_form {
+        width: 320px;
+    }
+    
+    .product_form div label {
+        font-size: 14px;
+    }
+
+    .product_form div input {
+        width: 150px;
+    }
+
+    #listIngredients {
+        font-size: 14px;
+    }
+    
+    .ingredient p {
+        font-size: 13px;
     }
 }
 
