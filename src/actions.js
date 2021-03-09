@@ -3,3 +3,10 @@ export const loginMan = () => {
         type: "LOGIN-MAN"
     }
 };
+
+export const productSubmitter = (arrayData) => {
+    return {
+        type: "SUBMIT-PRODUCT",
+        payload: {arrayData}
+    }
+};

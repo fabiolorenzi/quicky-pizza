@@ -1,7 +1,16 @@
 import React, {useState} from "react";
 import {useDropzone} from "react-dropzone";
+import {useDispatch, useSelector} from "react-redux";
+import {productSubmitter} from "../actions.js";
 
 function NewProductForm() {
+    //--------------------REACT-REDUX--------------------
+    
+    const dispatch = useDispatch();
+    const oldArray = useSelector(state => state.products);
+
+    //--------------------STATES--------------------
+
     const [prod, setProd] = useState({
         name: "",
         price: "",
@@ -24,6 +33,10 @@ function NewProductForm() {
         }
     });
 
+    const [newArray, setNewArray] = useState(oldArray);
+
+    //---------------------FUNCTIONS---------------------
+
     let image = imageProd.map((file) => (
         <div key={file.name}>
             <div>
@@ -35,16 +48,12 @@ function NewProductForm() {
     const addImage = e => {
         e.preventDefault();
         setProd({...prod, [prod.image]: imageProd.map((file) => prod.image.push(file))});
-        console.log(prod);
-        console.log(imageProd);
     };
 
     const removeImage = e => {
         e.preventDefault();
         setProd({...prod, [prod.image]: prod.image.map(() => prod.image.pop())});
         setImageProd(imageProd.map(() => imageProd.pop()));
-        console.log(prod);
-        console.log(imageProd);
     };
 
     const handleChange = e => {
@@ -67,6 +76,8 @@ function NewProductForm() {
 
     const newProduct = e => {
         e.preventDefault();
+        setNewArray([...newArray, prod]);
+        dispatch(productSubmitter(newArray));
         setProd({
             name: "",
             price: "",
@@ -75,6 +86,8 @@ function NewProductForm() {
         });
         setImageProd([]);
     };
+
+    //--------------------RETURN--------------------
 
     return(
         <div className="products_form">
