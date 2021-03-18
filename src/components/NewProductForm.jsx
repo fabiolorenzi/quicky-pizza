@@ -33,7 +33,7 @@ function NewProductForm() {
         }
     });
 
-    const [newArray, setNewArray] = useState(oldArray);
+    var newArray = oldArray;
 
     //---------------------FUNCTIONS---------------------
 
@@ -76,7 +76,7 @@ function NewProductForm() {
 
     const newProduct = e => {
         e.preventDefault();
-        setNewArray([...newArray, prod]);
+        newArray.push(prod);
         dispatch(productSubmitter(newArray));
         setProd({
             name: "",

@@ -17,6 +17,7 @@ body {
     top: 0;
     width: 100%;
     background-color: #000000;
+    z-index: 1522;
 }
 
 .menu {
@@ -147,6 +148,8 @@ body {
     font-weight: bold;
     line-height: 1.3em;
     margin-bottom: 40px;
+    background-color: #92929283;
+    padding: 10px;
 }
 
 #slogan_aboutus {
@@ -299,6 +302,73 @@ body {
     cursor: pointer;
 }
 
+/*---------------------PRODUCTS--------------------*/
+
+.productsList_container {
+    display: block;
+    background-image: url("./img/pizza_background_2.jpg");
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.productsList_container h1 {
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    color: #ff0000;
+    margin-bottom: 80px;
+}
+
+/*----------SINGLE_PRODUCT----------*/
+
+.singleProduct {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: auto;
+    background-color: #000000;
+}
+
+.singleProduct_image {
+    display: block;
+    width: 50%;
+}
+
+.singleProduct_image img {
+    display: block;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+}
+
+.singleProduct_info {
+    display: block;
+    width: 50%;
+    position: relative !important;
+    top: 120 !important;
+    text-align: left;
+}
+
+.singleProduct_info h1 {
+    text-align: left;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.singleProduct_infoTitle {
+    margin-bottom: 30px !important;
+}
+
+.ingredientsList,
+.singleProduct_nameValue {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
 @media only screen and (max-width: 1050px) {
 
     /*--------------------NEW_PRODUCT_FORM---------------------*/
@@ -311,42 +381,27 @@ body {
     .product_form {
         width: 400px;
     }
+
+    /*--------------------PRODUCTS--------------------*/
+
+    /*----------SINGLE_PRODUCT----------*/
+
+    .singleProduct_image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .singleProduct_info h1 {
+        font-size: 25px;
+    }
+    
+    .ingredientsList,
+    .singleProduct_nameValue {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
-
-    /*---------------------ABOUT_US--------------------*/
-
-    .text_aboutus {
-        width: 90%;
-    }
-
-    .text_aboutus p {
-        font-size: 25px;
-    }
-
-    /*--------------------NEW_PRODUCT_FORM---------------------*/
-
-    .products_form {
-        padding-bottom: 100px;
-    }
-
-    .product_form_image {
-        display: block;
-        margin: auto;
-        margin-bottom: 50px;
-        width: 90%;
-    }
-
-    .product_form {
-        display: block;
-        width: 420px;
-        margin: auto;
-        position: relative;
-    }
-}
-
-@media only screen and (max-width: 760px) {
 
     /*--------------------HEADER--------------------*/
 
@@ -502,6 +557,47 @@ body {
 
     /*---------------------ABOUT_US--------------------*/
 
+    .text_aboutus {
+        width: 90%;
+    }
+
+    .text_aboutus p {
+        font-size: 25px;
+    }
+
+    /*--------------------NEW_PRODUCT_FORM---------------------*/
+
+    .products_form {
+        padding-bottom: 100px;
+    }
+
+    .product_form_image {
+        display: block;
+        margin: auto;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+
+    .product_form {
+        display: block;
+        width: 420px;
+        margin: auto;
+        position: relative;
+    }
+
+    /*--------------------PRODUCTS--------------------*/
+
+    /*----------SINGLE_PRODUCT----------*/
+
+    .singleProduct {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+
+    /*---------------------ABOUT_US--------------------*/
+
     #slogan_aboutus {
         font-size: 35px;
         width: 90%;
@@ -512,6 +608,28 @@ body {
     .imageInput {
         width: 400px;
         height: 400px;
+    }
+
+    /*--------------------PRODUCTS--------------------*/
+
+    /*----------SINGLE_PRODUCT----------*/
+
+    .singleProduct {
+        width: 98%;
+    }
+
+    .singleProduct_image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .singleProduct_info h1 {
+        font-size: 18px;
+    }
+    
+    .ingredientsList,
+    .singleProduct_nameValue {
+        font-size: 12px;
     }
 }
 
@@ -577,6 +695,30 @@ body {
     .ingredient p {
         font-size: 13px;
     }
+
+    /*--------------------PRODUCTS--------------------*/
+
+    /*----------SINGLE_PRODUCT----------*/
+
+    .singleProduct_image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .singleProduct_info h1 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .ingredientsList,
+    .singleProduct_nameValue {
+        font-size: 10px;
+    }
+    
+    .singleProduct_infoTitle {
+        margin-bottom: 15px !important;
+    }
+    
 }
 
 @media only screen and (max-width: 360px) {

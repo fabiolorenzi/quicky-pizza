@@ -17,6 +17,7 @@ function Menu() {
         <div className="menu">
             <div className="big_menu">
                 <a href="#aboutus"><p>About us</p></a>
+                <a href="#products"><p>Products</p></a>
                 <a href="#shop"><p>Shop</p></a>
                 <a href="#checkout"><p>Checkout</p></a>
                 <a href="#contacts"><p>Contacts</p></a>
@@ -31,6 +32,7 @@ function Menu() {
             <div className="hidden_menu_bar" id={hiddenMenuOpener}>
                 <div className="hidden_menu">
                     <a href="#aboutus"><p>About us</p></a>
+                    <a href="#products"><p>Products</p></a>
                     <a href="#shop"><p>Shop</p></a>
                     <a href="#checkout"><p>Checkout</p></a>
                     <a href="#contacts"><p>Contacts</p></a>
