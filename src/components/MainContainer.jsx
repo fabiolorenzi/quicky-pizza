@@ -3,6 +3,7 @@ import React from "react";
 import Header from "./Header.jsx";
 import AboutUs from "./AboutUs.jsx";
 import Products from "./Products.jsx";
+import Shop from "./Shop.jsx";
 
 function MainContainer() {
     return(
@@ -10,6 +11,7 @@ function MainContainer() {
             <Header />
             <AboutUs />
             <Products />
+            <Shop />
         </div>
     );
 };

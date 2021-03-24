@@ -369,6 +369,83 @@ body {
     font-weight: 500;
 }
 
+/*---------------------SHOP--------------------*/
+
+.shop_container {
+    display: block;
+    background-image: url("./img/pizza_background_3.jpg");
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.shop_container h1 {
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    color: #ff0000;
+}
+
+/*-----------SHOP_TABLE----------*/
+
+.listProductsShop {
+    display: block;
+    width: 90%;
+    margin: auto;
+    background-color: #2e2e2ed0;
+}
+
+.listProductsShop table {
+    border: 2px solid #000000;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.listProductsShop table tr th {
+    border: 2px solid #000000;
+}
+
+.listProductsShop table tr th h1 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.firstLine th h1 {
+    font-size: 25px !important;
+}
+
+.productLine img {
+    width: 200px;
+    height: 200px;
+}
+
+/*----------TOTAL_PRICE----------*/
+
+#totalPrice {
+    font-size: 35px;
+    color: #ffffff;
+}
+
+#payButton {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    background-color: #00d300;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: auto;
+    transition-duration: 0.3s;
+}
+
+#payButton:hover {
+    background-color: #c8ff00;
+    transition-duration: 0.3s;
+}
+
 @media only screen and (max-width: 1050px) {
 
     /*--------------------NEW_PRODUCT_FORM---------------------*/
@@ -592,6 +669,28 @@ body {
     .singleProduct {
         width: 90%;
     }
+
+    /*-----------SHOP_TABLE----------*/
+
+    .listProductsShop {
+        display: block;
+        width: 98%;
+        margin: auto;
+        background-color: #2e2e2ed0;
+    }
+
+    .firstLine th h1 {
+        font-size: 15px !important;
+    }
+
+    .productLine img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .productLine th h1 {
+        font-size: 15px !important;
+    }
 }
 
 @media only screen and (max-width: 760px) {
@@ -630,6 +729,25 @@ body {
     .ingredientsList,
     .singleProduct_nameValue {
         font-size: 12px;
+    }
+
+    /*-----------SHOP_TABLE----------*/
+
+    .firstLine th h1 {
+        font-size: 12px !important;
+    }
+
+    .productLine img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .productLine th h1 {
+        font-size: 12px !important;
+    }
+
+    .productLine th input {
+        width: 50px;
     }
 }
 
@@ -719,6 +837,24 @@ body {
         margin-bottom: 15px !important;
     }
     
+    /*-----------SHOP_TABLE----------*/
+
+    .firstLine th h1 {
+        font-size: 9px !important;
+    }
+
+    .productLine img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .productLine th h1 {
+        font-size: 9px !important;
+    }
+
+    .productLine th input {
+        width: 30px;
+    }
 }
 
 @media only screen and (max-width: 360px) {
