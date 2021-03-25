@@ -5,6 +5,7 @@ import AboutUs from "./AboutUs.jsx";
 import Products from "./Products.jsx";
 import Shop from "./Shop.jsx";
 import Contacts from "./Contacts.jsx";
+import Footer from "./Footer.jsx";
 
 function MainContainer() {
     return(
@@ -14,6 +15,7 @@ function MainContainer() {
             <Products />
             <Shop />
             <Contacts />
+            <Footer />
         </div>
     );
 };

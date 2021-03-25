@@ -501,9 +501,27 @@ body {
 #instagram h2 {
     background-color: #8a3ab9;
 }
- #mail h2 {
+
+#mail h2 {
      background-color: #5c5c5c;
- }
+}
+
+/*---------------------FOOTER--------------------*/
+
+.footer {
+    display: block;
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+}
+
+.footer h1 {
+    color: #ffffff;
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+}
 
 @media only screen and (max-width: 1050px) {
 
