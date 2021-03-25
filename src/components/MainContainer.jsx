@@ -4,6 +4,7 @@ import Header from "./Header.jsx";
 import AboutUs from "./AboutUs.jsx";
 import Products from "./Products.jsx";
 import Shop from "./Shop.jsx";
+import Contacts from "./Contacts.jsx";
 
 function MainContainer() {
     return(
@@ -12,6 +13,7 @@ function MainContainer() {
             <AboutUs />
             <Products />
             <Shop />
+            <Contacts />
         </div>
     );
 };

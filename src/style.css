@@ -373,7 +373,7 @@ body {
 
 .shop_container {
     display: block;
-    background-image: url("./img/pizza_background_3.jpg");
+    background-image: url("./img/receipt_wallpaper.jpg");
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
@@ -438,6 +438,7 @@ body {
     border-radius: 5px;
     padding: 10px 40px;
     margin: auto;
+    margin-bottom: 80px;
     transition-duration: 0.3s;
 }
 
@@ -445,6 +446,64 @@ body {
     background-color: #c8ff00;
     transition-duration: 0.3s;
 }
+
+/*---------------------CONTACTS--------------------*/
+
+.contacts_container {
+    display: block;
+    background-image: url("./img/pizza_background_3.jpg");
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.contacts_container h1 {
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    color: #ff0000;
+}
+
+.singleContacts {
+    display: block;
+    width: 100%;
+}
+
+.singleContacts a {
+    text-decoration: none;
+}
+
+.singleContacts a h2 {
+    font-size: 30px;
+    font-weight: 500;
+    width: 250px;
+    text-align: center;
+    margin: 0 auto 30px;
+    color: #ffffff;
+    padding: 20px 50px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+}
+
+.singleContacts a h2:hover {
+    padding: 22.5px 52.5px;
+    width: 280px;
+    font-size: 35px;
+    transition-duration: 0.3s;
+}
+
+#facebook h2 {
+    background-color: #4267B2;
+}
+
+#instagram h2 {
+    background-color: #8a3ab9;
+}
+ #mail h2 {
+     background-color: #5c5c5c;
+ }
 
 @media only screen and (max-width: 1050px) {
 
@@ -854,6 +913,15 @@ body {
 
     .productLine th input {
         width: 30px;
+    }
+
+    /*---------------------CONTACTS--------------------*/
+
+    .singleContacts a h2 {
+        font-size: 20px;
+        padding: 15px 30px;
+        width: 180px;
+        transition-duration: 0.3s;
     }
 }
 

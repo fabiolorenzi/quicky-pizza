@@ -19,7 +19,6 @@ function Menu() {
                 <a href="#aboutus"><p>About us</p></a>
                 <a href="#products"><p>Products</p></a>
                 <a href="#shop"><p>Shop</p></a>
-                <a href="#checkout"><p>Checkout</p></a>
                 <a href="#contacts"><p>Contacts</p></a>
             </div>
             <div className="burger_menu">
@@ -34,7 +33,6 @@ function Menu() {
                     <a href="#aboutus"><p>About us</p></a>
                     <a href="#products"><p>Products</p></a>
                     <a href="#shop"><p>Shop</p></a>
-                    <a href="#checkout"><p>Checkout</p></a>
                     <a href="#contacts"><p>Contacts</p></a>
                 </div>
                 <div className="hidden_button">
