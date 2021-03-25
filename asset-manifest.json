@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/quicky-pizza/static/css/main.e61e9c3d.chunk.css",
-    "main.js": "/quicky-pizza/static/js/main.db0766e6.chunk.js",
-    "main.js.map": "/quicky-pizza/static/js/main.db0766e6.chunk.js.map",
+    "main.js": "/quicky-pizza/static/js/main.7d2f1f92.chunk.js",
+    "main.js.map": "/quicky-pizza/static/js/main.7d2f1f92.chunk.js.map",
     "runtime-main.js": "/quicky-pizza/static/js/runtime-main.ec7919c3.js",
     "runtime-main.js.map": "/quicky-pizza/static/js/runtime-main.ec7919c3.js.map",
-    "static/js/2.1eaee735.chunk.js": "/quicky-pizza/static/js/2.1eaee735.chunk.js",
-    "static/js/2.1eaee735.chunk.js.map": "/quicky-pizza/static/js/2.1eaee735.chunk.js.map",
+    "static/js/2.9ae269fc.chunk.js": "/quicky-pizza/static/js/2.9ae269fc.chunk.js",
+    "static/js/2.9ae269fc.chunk.js.map": "/quicky-pizza/static/js/2.9ae269fc.chunk.js.map",
     "index.html": "/quicky-pizza/index.html",
     "static/css/main.e61e9c3d.chunk.css.map": "/quicky-pizza/static/css/main.e61e9c3d.chunk.css.map",
-    "static/js/2.1eaee735.chunk.js.LICENSE.txt": "/quicky-pizza/static/js/2.1eaee735.chunk.js.LICENSE.txt",
+    "static/js/2.9ae269fc.chunk.js.LICENSE.txt": "/quicky-pizza/static/js/2.9ae269fc.chunk.js.LICENSE.txt",
     "static/media/style.css": "/quicky-pizza/static/media/receipt_wallpaper.751a985d.jpg",
     "static/media/four_cheese.75819908.jpg": "/quicky-pizza/static/media/four_cheese.75819908.jpg",
     "static/media/four_seasons.fb0ed784.jpg": "/quicky-pizza/static/media/four_seasons.fb0ed784.jpg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ec7919c3.js",
-    "static/js/2.1eaee735.chunk.js",
+    "static/js/2.9ae269fc.chunk.js",
     "static/css/main.e61e9c3d.chunk.css",
-    "static/js/main.db0766e6.chunk.js"
+    "static/js/main.7d2f1f92.chunk.js"
   ]
 }
